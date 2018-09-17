@@ -117,8 +117,8 @@ function createMap(earthquakes) {
       // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i]) + '"></i> ' +
-            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+            '<i style="background:' + getColor(grades[i]) + '"></i>' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + "   " + '<br>' : '+');
         }
         return div;
   };
@@ -126,5 +126,5 @@ function createMap(earthquakes) {
   legend.addTo(myMap);
 };  
 
-// "There is no better productivity than 2hen people are inclusive, and treat each other equally." - Verna Orsatti"
+// "There is no better productivity than when people are inclusive, and treat each other equally." - Verna Orsatti"
 
